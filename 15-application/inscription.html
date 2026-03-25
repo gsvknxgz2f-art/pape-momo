@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            color: black;
+            border-color: blue;
+            background-color: white;
+        }
+
+        legend {
+            color: white;
+            background-color: black;
+            padding: 1px;
+            font-size: 16px;
+            width: 170px;
+            font-style: oblique;
+        }
+        
+
+        nav {
+            text-align: center;
+            
+
+        }
+
+        button {
+            color: white;
+            border-color: black;
+            background-color: blue;
+            text-align: center;
+        
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="inscription.html">Inscription</a>
+        <a href="tableau.html">Tableau</a>
+    </nav>
+    Formulaire d'inscription
+    Inscrivez-vous dANS NOTRE PLATE-FORME POUR DECOUVRIR 
+    <fieldset>
+        <legend>page d'inscription</legend>
+        <form action="">
+            <div><label for="Prénom">Prénom</label> <br>
+                <input type="email" id="Prénom"></div> <br>
+            <div><label for="Nom">Nom</label> <br>
+                <input type="email" id="Nom"></div> <br>
+            <div><label for="Email">Email</label> <br>
+                <input type="email" id="Email"></div> <br>
+            <div class="radio">
+                <label for="Homme">
+                    <input type="radio" id="Homme" name="genre">Homme
+                </label> <br>
+                <label for="Femme">
+                    <input type="radio" id="Femme" name="genre">Femme
+                </label>
+            </div>
+            <br>
+            <div><label for="Adresse">Adresse</label> <br><input type="email" id="Adresse"></div>
+            <br>
+            <div><label for="Email">Email</label> <br><input type="email" id="Email"></div>
+            <br>
+            <div class="radio">
+                <label for="Homme">
+                    <input type="radio" id="Homme" name="genre">Homme
+                </label> <br>
+                <label for="Femme">
+                    <input type="radio" id="Femme" name="genre">Femme
+                </label>
+            </div>
+            <br>
+                <label for="Adresse">Adresse</label> <br>
+                <input type="" id="Adresse">
+                <select id="Adresse">
+                    <option> Dakar</option>
+                    <option> Louga</option>
+                    <option> Saint-Louis</option>
+                </select>
+            <br> <br>
+            <div>
+                <label for="Photo de profil">Photo de profil</label> <br>
+                <input type="file" id="Photo de profil" accept="importe">
+            </div>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Coordonnés</legend>
+        Numéro de téléphone
+        <div><label for="Numéro"></label><input type="number" id="Numéro"></div>
+        <br>
+        est tu disponible toujour avec ce numero
+        <div class="radio">
+            <label for="Oui">
+                <input type="radio" id="Oui" name="Whatsapp"> Oui
+            </label> <br>
+            <label for="Non">
+                <input type="radio" id="Non" name="Whatsapp"> Non
+            </label>
+        </div>
+    </fieldset>
+    <button type="submit">Envoyer</button>
+
+
+</body>
+
+</html>

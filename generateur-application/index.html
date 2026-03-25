@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur d'Applications Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Générateur site  Web pour ceer des application</h1>
+            <p>Créez facilement des applications  simples 
+                et performant 
+            </p>
+        </header>
+
+        <form id="generatorForm">
+            <div class="form-group">
+                <label for="appName">docteuur</label>
+                <input type="text" id="appName" name="appName" placeholder="Ma Super App" required>
+            </div>
+
+            <div class="form-group">
+                <label for="appType">Type d'application</label>
+                <select id="appType" name="appType" required>
+                    <option value="">Choisissez un type</option>
+                    <option value="todo">Liste de tâches (Todo)</option>
+                    <option value="calculator">Calculatrice</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-generate">Générer l'application</button>
+        </form>
+
+        <div id="result" class="result hidden">
+            <h2>Votre application générée</h2>
+            <div class="code-container">
+                <textarea id="generatedCode" class="code-display" readonly placeholder="Le code HTML complet de votre application apparaîtra ici..."></textarea>
+            </div>
+            <button id="downloadBtn" class="btn-download">Télécharger l'application (HTML)</button>
+            <button id="copyBtn" class="btn-copy">Copier le code</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
